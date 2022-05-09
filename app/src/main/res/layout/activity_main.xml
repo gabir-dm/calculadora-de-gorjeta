@@ -7,12 +7,158 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/lblValorFinalPorPessoa"
+        android:layout_width="105dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="textEnd"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/lblSkGorjeta4"
+        app:layout_constraintTop_toBottomOf="@+id/lblValorFinalConta" />
+
+    <TextView
+        android:id="@+id/lblSkGorjeta2"
+        android:layout_width="210dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="40dp"
+        android:text="Valor Gorjeta:"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skGorjeta" />
+
+    <TextView
+        android:id="@+id/lblSkGorjeta3"
+        android:layout_width="210dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:text="Total:"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSkGorjeta2" />
+
+    <TextView
+        android:id="@+id/lblSkGorjeta4"
+        android:layout_width="210dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:text="Total Por Pessoa:"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSkGorjeta3" />
+
+    <TextView
+        android:id="@+id/lblPessoas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:text="Número de Pessoas:"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalConta" />
+
+    <TextView
+        android:id="@+id/lblSkGorjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:text="Gorjeta:"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPessoas" />
+
+    <TextView
+        android:id="@+id/lblTotalConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="60dp"
+        android:text="Total da Conta:"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtTotalConta"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTotalConta" />
+
+    <EditText
+        android:id="@+id/txtPessoas"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPessoas" />
+
+    <SeekBar
+        android:id="@+id/skGorjeta"
+        android:layout_width="288dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        android:progress="10"
+        android:progressTint="#2D5155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSkGorjeta" />
+
+    <TextView
+        android:id="@+id/lblPercentual"
+        android:layout_width="29dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/skGorjeta"
+        app:layout_constraintTop_toBottomOf="@+id/lblSkGorjeta" />
+
+    <TextView
+        android:id="@+id/lblValorFinalGorjeta"
+        android:layout_width="105dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="textEnd"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/lblSkGorjeta2"
+        app:layout_constraintTop_toBottomOf="@+id/skGorjeta" />
+
+    <TextView
+        android:id="@+id/lblValorFinalConta"
+        android:layout_width="105dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="textEnd"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/lblSkGorjeta3"
+        app:layout_constraintTop_toBottomOf="@+id/lblValorFinalGorjeta" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
